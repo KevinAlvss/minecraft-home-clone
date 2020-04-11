@@ -1,0 +1,542 @@
+@font-face{
+    font-family: fonte;
+    src: url(../font/NotoSans-Regular.ttf);
+}
+
+*{box-sizing: border-box;}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: fonte;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    position: fixed;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/Fundo/bg-wool-dark.png);
+
+    width: 100%;
+    height: 13vh;
+    font-size: 10pt;
+
+}
+
+.menu #logo{
+    width: 258px;
+    height: 41.58px;
+    margin-left: 125px;
+}
+
+.menu #itens-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    height: 100%;
+    color: #ffffff;
+}
+
+.menu #itens-menu .itens-menu-elements img{
+    height: 40px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+.itens-menu-elements{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.inicial{
+    margin-top: 13vh;
+
+    background-image: url(../images/Inicio/home-hero-1200x600.jpg);
+    background-repeat: no-repeat;
+    background-size: 87% 100%;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.inicial #content{
+    margin-top: 10vh;
+    margin-left: 13vw;
+}
+
+.inicial #content h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.inicial #content p{
+    width: 530px;
+    font-size: 13pt;
+    margin: 10px 0 40px 0;
+}
+
+.inicial #content button{
+    width: 310px;
+    height: 72px;
+    background-color: #34AA2F;
+    border-top: 5px solid #9AD597;
+    border-right: 5px solid #9AD597;
+    border-bottom: 5px solid #247721;
+    border-left: 5px solid #247721;
+    font-size: 13pt;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.explorar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+    width: 100%;
+    height: 125vh;
+    background-image: url(../images/Fundo/bg-wool-dark.png);
+}
+
+#explorar-content{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 93%;
+    background-color:#EEEEEE;
+}
+
+#explorar-content #cima-explorar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#explorar-content #cima-explorar h1{
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+#explorar-content #baixo-explorar{
+    padding: 0 50px;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.exp{
+    height: 90%;
+    width: 228px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-imagem{
+    height: fit-content;
+    width: 100%;
+}
+
+.exp-imagem img{
+    transition: 500ms;
+}
+
+.exp-imagem img:hover{
+    transform: scale(1.1);
+    z-index: 0;
+    border: 1px solid #34AA2F;
+}
+
+.exp-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.exp-text h3{
+    margin-bottom: 0;
+    font-weight: 700;
+    width: 200px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.exp-text p{
+    margin: 10px 0;
+    font-size: 14px;
+    color: #181818;
+}
+
+.exp-text a{
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: #196D17;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 78vh;
+    background-image: url(../images/Fundo/bg-wool-dark.png);
+}
+
+#not-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    height: 20%;
+}
+
+#not-top h3{
+    margin: 0;
+}
+
+#not-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.card{
+    height: fit-content;
+    width: 20%;
+    margin: 0 10px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card:first-child{
+    margin-bottom: 25px;
+}
+
+.card:nth-last-child(2){
+    height: fit-content;
+    width: 25%;
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h5{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
+    width: 240px;
+}
+
+.card p{
+    font-size: 15px;
+    color: #eaeaea;
+    margin: 0;
+}
+
+
+
+.mercado{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 150vh;
+    background-image: url(../images/Fundo/bg-wool-light.png);
+}
+
+.transicao-top{
+    width: 100%;
+    height: 18vh;
+}
+
+.transicao-top img{
+    height: 100%;
+    width: 100%;
+}
+
+.mercado-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 35%;
+}
+
+.bloco:last-child{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.left-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.left-m img{
+    width: 98%;
+    height: 98%;
+}
+
+.right-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    height: 100%;
+    width: 50%;
+}
+
+.right-m h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.right-m p{
+    font-size: 10pt;
+}
+
+.saiba-more{
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.saiba-more a {
+    text-decoration: none;
+    color: #196D17;
+    margin-left: 5px;
+}
+
+.transicao-bottom{
+    height: 18vh;
+    width: 100%;
+}
+
+.transicao-bottom img{
+    height: 100%;
+    width: 100%;
+}
+
+.comunidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #F8F5F4;
+}
+
+#comunidade-top{
+    width: 100%;
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    text-align: center;
+}
+
+#comunidade-top h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+#comunidade-top p{
+    width: 500px;
+    margin-top: 15px;
+}
+
+#explore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#explore a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #196D17;
+    margin-left: 5px;
+}
+
+#comunidade-bottom{
+    flex-grow: 1;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    padding: 0 80px;
+
+}
+
+#bott-1 , #bott-2, #bott-3, #bott-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 250px;
+    height: 250px;
+    background-color: #cccccc;
+    margin: 0 10px;
+}
+
+#bott-1{
+    background-image: url(../images/Comunidade/matterl-tile1x1.jpg);
+}
+
+#bott-2{
+    background-image: url(../images/Comunidade/bedrock-nether-beta-1x1tile.jpg);
+}
+
+#bott-3{
+    background-image: url(../images/Comunidade/new-on-realms-march-1x1tile.jpg);
+}
+
+#bott-4{
+    background-image: url(../images/Comunidade/winter_earth_1x1.png);
+    background-size: cover;
+}
+
+.com-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0 ,0 , 0 , 0.7);
+
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.com-content p{
+    width: 90%;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 9pt;
+
+
+    position: relative;
+    top: 7%;
+    left: 35%;
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 15vh;
+    background-color: #313131;
+}
+
+#r-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#r-left span{
+    color: #ffffff;
+    font-size: 9pt;
+}
+
+#r-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+#r-center a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 9pt;
+    margin: 0 10px;
+}
+
+#r-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
